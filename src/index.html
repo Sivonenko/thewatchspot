@@ -2,23 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/site.webmanifest" />
+    <link rel="mask-icon" href="favicon" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>The Watch Spot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <!-- Header / Menu -->
+    <load src="partials/header.html" />
+    <!-- Hero -->
+    <load src="partials/hero.html" />
+    <!-- About Us -->
+    <load src="partials/about.html" />
+    <!-- Catalog -->
+    <load src="partials/catalog.html" />
+    <!-- Modal Window -->
+    <load src="partials/modal.html" />
+    <!-- New Watches -->
+    <load src="partials/new_watches.html" />
+    <!-- Sale -->
+    <load src="partials/sale.html" />
+    <!-- Footer -->
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <load src="partials/footer.html" />
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/modal.js"></script>
   </body>
 </html>
